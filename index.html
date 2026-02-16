@@ -1,11 +1,91 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Gfidone</title>
-  <meta charset="UTF-8">
+  <meta name="description" content="Personal site of gfidone." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hello, I'm Giacomo Fidone.</h1>
-  <p>Welcome to my github page.</p>
+  <header class="wrap hero">
+    <div>
+      <p class="tag">👋 Hi, I’m</p>
+      <h1>Gfidone</h1>
+      <p class="lead">I build things on the web. This is my corner of the internet.</p>
+
+      <div class="cta">
+        <a class="btn primary" href="#projects">See projects</a>
+        <a class="btn" href="https://github.com/gfidone" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+
+      <div class="meta">
+        <span>📍 Italy</span>
+        <span>•</span>
+        <a href="mailto:you@example.com">you@example.com</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+      </div>
+      <pre><code><span class="dim">$</span> whoami
+gfidone
+
+<span class="dim">$</span> skills
+web • python • git
+
+<span class="dim">$</span> status
+shipping cool stuff ✅</code></pre>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="grid">
+        <a class="tile" href="#" target="_blank" rel="noreferrer">
+          <h3>Project One</h3>
+          <p>Short description of what it does.</p>
+          <span class="chip">JavaScript</span>
+        </a>
+
+        <a class="tile" href="#" target="_blank" rel="noreferrer">
+          <h3>Project Two</h3>
+          <p>Short description of what it does.</p>
+          <span class="chip">Python</span>
+        </a>
+
+        <a class="tile" href="#" target="_blank" rel="noreferrer">
+          <h3>Project Three</h3>
+          <p>Short description of what it does.</p>
+          <span class="chip">Anything</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>About</h2>
+      <p>
+        Write 2–3 sentences: what you’re learning, what you like building, what you’re aiming for.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Links</h2>
+      <div class="links">
+        <a href="https://github.com/gfidone" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="#" target="_blank" rel="noreferrer">Resume</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <small>© <span id="y"></span> gfidone • Built on GitHub Pages</small>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
