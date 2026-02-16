@@ -1,15 +1,31 @@
+/* Vimeo full-screen background */
 .bg-video {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  inset: 0;
   z-index: -2;
+  overflow: hidden;
 }
 
-body::after {
-  content: "";
+.bg-video iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* so you can click links on top */
+}
+
+/* “cover” behavior (avoid black bars) */
+@media (min-aspect-ratio: 16/9) {
+  .bg-video iframe { height: 56.25vw; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .bg-video iframe { width: 177.78vh; }
+}
+
+/* Dark overlay for readability */
+.bg-overlay {
   position: fixed;
   inset: 0;
   background: rgba(7, 10, 18, 0.65);
