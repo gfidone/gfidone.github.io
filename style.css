@@ -1,5 +1,6 @@
 /* Fullscreen Vimeo background */
 .bg-video {
+  background: url("fallback.jpg") center center / cover no-repeat;
   position: fixed;
   inset: 0;
   z-index: -2;
