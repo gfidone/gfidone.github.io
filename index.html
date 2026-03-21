@@ -1,138 +1,68 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>gfidone</title>
-    <meta name="description" content="Personal site of gfidone." />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Giacomo Fidone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
 
-  <body>
-    <!-- Background Video -->
-    <div class="bg-video">
-      <iframe
-        src="https://player.vimeo.com/video/396188683?background=1"
-        frameborder="0"
-        allow="autoplay; fullscreen; picture-in-picture"
-        title="Background video"
-      ></iframe>
-    </div>
+<body>
 
-    <div class="bg-overlay"></div>
+  <!-- Background Video (UNCHANGED CORE STRUCTURE) -->
+  <div class="bg-video">
+    <iframe
+      src="https://player.vimeo.com/video/396188683?background=1"
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+    ></iframe>
+  </div>
 
-    <!-- Hero Section -->
-    <header class="wrap hero">
-      <div>
-        <p class="tag">Hello 👋, my name is</p>
-        <h1>Giacomo Fidone</h1>
-        <p class="lead">
-          I do stuff. Mostly XAI, NLP, Deep Learning.
-        </p>
+  <div class="bg-overlay"></div>
 
-        <div class="cta">
-          <a class="btn primary" href="#projects">See projects</a>
-          <a
-            class="btn"
-            href="https://github.com/gfidone"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
+  <!-- Header / Name -->
+  <header class="header">
+    <h1 class="name">Giacomo Fidone</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <section class="glass about">
+      <p>
+        Researcher in Explainable AI, NLP and Deep Learning. Interested in building systems that are both powerful and understandable.
+      </p>
+    </section>
+
+    <section class="glass projects">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <h3>COSMOS</h3>
+          <p>LLM-powered simulator of online conversations for moderation research.</p>
         </div>
 
-        <div class="meta">
-          <span>📍 Italy</span>
-          <span>•</span>
-          <a href="mailto:fidonegiacomo@gmail.com">
-            fidonegiacomo@gmail.com
-          </a>
+        <div class="project">
+          <h3>Y-COSMOS</h3>
+          <p>Scalable extension of COSMOS with richer social dynamics.</p>
+        </div>
+
+        <div class="project">
+          <h3>Project Three</h3>
+          <p>Short description of what it does.</p>
         </div>
       </div>
+    </section>
 
-      <div class="card">
-        <div class="card-top">
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-        </div>
-
-        <pre><code><span class="dim">$</span> while True
-<span class="dim">$</span>     predict and explain ✅
-<span class="dim">$</span> status shipping cool stuff </code></pre>
+    <section class="glass links">
+      <h2>Links</h2>
+      <div class="link-list">
+        <a href="https://github.com/gfidone" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/giacomofidone/" target="_blank">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=SHFctl8AAAAJ&hl=en" target="_blank">Scholar</a>
       </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="wrap">
-      <!-- Projects -->
-      <section id="projects" class="section">
-        <h2>Projects</h2>
-
-        <div class="grid">
-          <a class="tile" href="https://github.com/gfidone/COSMOS/tree/main" target="_blank" rel="noreferrer">
-            <h3>COSMOS</h3>
-            <p>A LLM-Powered Simulator of Online Social Network Conversations for Evaluating Content Moderation.</p>
-            <span class="chip">Python</span>
-          </a>
-
-          <a class="tile" href="#" target="_blank" rel="noreferrer">
-            <h3>Y-COSMOS</h3>
-            <p>COSMOS meets the YSocial environment: more scalable and with new social dynamics.</p>
-            <span class="chip">Python</span>
-          </a>
-
-          <a class="tile" href="#" target="_blank" rel="noreferrer">
-            <h3>Project Three</h3>
-            <p>Short description of what it does.</p>
-            <span class="chip">Anything</span>
-          </a>
-        </div>
-      </section>
-
-      <!-- About -->
-      <section class="section">
-        <h2>About</h2>
-        <p>
-          My interests orbitate around Generative Artificial Intelligence.
-        </p>
-      </section>
-
-      <!-- Links -->
-      <section class="section">
-        <h2>Links</h2>
-
-        <div class="links">
-          <a
-            href="https://github.com/gfidone"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://www.linkedin.com/in/giacomofidone/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="https://scholar.google.com/citations?user=SHFctl8AAAAJ&hl=en"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Google Scholar
-          </a>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="wrap foot">
-      <small>© <span id="y"></span> gfidone</small>
-    </footer>
+</html>
 
     <script src="script.js"></script>
   </body>
